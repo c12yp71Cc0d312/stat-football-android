@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#232323"
+    android:layout_marginBottom="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView_fixture_home_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_fixtures_score"
+            app:layout_constraintEnd_toStartOf="@+id/textView_fixtures_score"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_fixtures_score" />
+
+        <TextView
+            android:id="@+id/textView_fixture_home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Home"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_fixture_home_logo"
+            app:layout_constraintStart_toStartOf="@+id/imageView_fixture_home_logo"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_fixture_home_logo" />
+
+        <TextView
+            android:id="@+id/textView_fixtures_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCORE"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.247" />
+
+        <TextView
+            android:id="@+id/textView_fixture_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            app:layout_constraintEnd_toEndOf="@+id/textView_fixtures_score"
+            app:layout_constraintStart_toStartOf="@+id/textView_fixtures_score"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fixtures_score" />
+
+        <ImageView
+            android:id="@+id/imageView_fixture_away_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_fixtures_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_fixtures_score"
+            app:layout_constraintTop_toTopOf="@+id/textView_fixtures_score" />
+
+        <TextView
+            android:id="@+id/textView_fixture_away_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Away"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_fixture_away_logo"
+            app:layout_constraintStart_toStartOf="@+id/imageView_fixture_away_logo"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_fixture_away_logo" />
+
+        <TextView
+            android:id="@+id/textView_fixture_matchday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matchday"
+            android:textColor="#fff"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_fixture_away_logo"
+            app:layout_constraintStart_toStartOf="@+id/imageView_fixture_home_logo"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fixture_home_name" />
+
+        <TextView
+            android:id="@+id/textView_fixture_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Date"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            app:layout_constraintEnd_toEndOf="@+id/textView_fixture_matchday"
+            app:layout_constraintStart_toStartOf="@+id/textView_fixture_matchday"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fixture_matchday" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

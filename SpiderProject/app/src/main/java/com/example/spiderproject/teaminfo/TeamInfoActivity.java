@@ -33,7 +33,6 @@ public class TeamInfoActivity extends AppCompatActivity implements TeamInfoSquad
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_info);
-        getActionBar().setTitle("Team Info");
 
         teamLogo = findViewById(R.id.imageView_teeaminfo_logo);
         team_Name = findViewById(R.id.textView_teaminfo_teamname);

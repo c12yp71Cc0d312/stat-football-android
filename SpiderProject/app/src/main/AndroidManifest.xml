@@ -19,16 +19,17 @@
             android:name=".teaminfo.TeamInfoActivity"
             android:label="@string/title_activity_team_info"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".home.MainActivity">
+        <activity android:name=".home.MainActivity"/>
+        <activity android:name=".standings.StandingsActivity" />
+        <activity android:name=".fixtures.FixturesActivitySelection" />
+        <activity android:name=".fixtures.FixturesActivity" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".standings.StandingsActivity" />
-        <activity android:name=".fixtures.FixturesActivitySelection" />
-        <activity android:name=".fixtures.FixturesActivity" />
     </application>
 
 </manifest>
